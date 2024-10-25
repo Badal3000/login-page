@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('new-background.jpg');
+            
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            border: 2px black solid;
+            padding: 20px;
+            border-radius: 18px;
+            height: 550px;
+            width: 300px;
+            box-shadow:0px 20px 0px 20px rgb(90, 91, 91);
+            margin-top: 60px;
+            box-sizing: border-box;
+            
+        }
+        #btn{
+            width: 170px ;
+            height: 20px;
+            background-color: grey;
+            color: white;
+        }
+        #input-error{
+            color: red;
+        }
+        div input{
+            font-size: 1rem;
+        }
+        #email{
+            display: flex;
+            flex-direction: column;
+        }
+        #email input{
+            width: 200px;
+        }
+        form p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="sign-up" action="#" method="get">
+        
+            <h1>
+                Sign Up
+            </h1>
+            <div id="username" class="input-container username">
+                <label for="username-input">Username:</label>
+                <input  type="text" id="username-input" placeholder="choose a username">
+                <p id="username-error"></p>
+    
+            </div>
+            <div id="email" class="input-container email">
+                <label for="email-input">Email:  </label>
+                <input type="email" id="email-input" placeholder="Enter your email">
+                <p id="email-error"></p>
+            </div>
+            <div id="password" class="input-container password">
+                <label for="password-input">Password:</label>
+                <input  type="password" id="password-input" placeholder="Enter your password">
+                <p id="password-error"></p>
+    
+            </div>
+            <div id="confirm-password" class="input-container confirm-password">
+                <label for="confirm-password-input">Confirm Password:</label>
+                <input type="password" id="confirm-password-input" placeholder="Re-enter your password">
+                <p id="confirm-password-error"></p>
+    
+            </div>
+            <div id="submit">
+                <button id="btn">Sign Up</button>
+            </div>
+        
+        </form>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
